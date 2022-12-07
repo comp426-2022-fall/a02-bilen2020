@@ -19,7 +19,7 @@ if(args.h) {
     exit(0);
 }
 
-const timezone = moment.tz.guest();
+const timezone = moment.tz.guess();
 
 var latitude = 52.52;
 var longitude = 13.41
