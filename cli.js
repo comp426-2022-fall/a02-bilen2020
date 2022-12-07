@@ -45,8 +45,8 @@ if(!longitude) {
     console.log("Longitude must be in range")
 }
 
-if(args.z) {
-    timezone = args.z;
+if(args.t) {
+    timezone = args.t;
 }
 
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + String(latitude) + '&longitude=' + String(longitude) + '&hourly=temperature_2m&daily=precipitation_hours&current_weather=true&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=' + timezone);
