@@ -38,11 +38,13 @@ if(args.w) {
 }
 
 if(!latitude) {
-    console.log("Latitude must be in range")
+    console.log("Latitude must be in range");
+    exit(0);
 }
 
 if(!longitude) {
-    console.log("Longitude must be in range")
+    console.log("Longitude must be in range");
+    exit(0);
 }
 
 if(args.z) {
