@@ -21,8 +21,8 @@ if(args.h) {
 
 const timezone = moment.tz.guess();
 
-var latitude = 52.52;
-var longitude = 13.41
+var latitude;
+var longitude;
 
 if(args.n) {
     latitude = args.n;
@@ -50,7 +50,6 @@ if(!longitude) {
 if(args.z) {
     timezone = args.z;
 }
-timezone.replace("/", "%2");
 
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&daily=precipitation_hours&current_weather=true&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=' + timezone);
 
