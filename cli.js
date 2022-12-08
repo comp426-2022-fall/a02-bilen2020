@@ -75,3 +75,4 @@ if (days == 0) {
     console.log("tomorrow.")
 }
 
+replace("%0A", " ");
