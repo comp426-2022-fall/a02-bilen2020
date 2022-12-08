@@ -16,14 +16,13 @@
     "url": "https://github.com/comp426-2022-fall/a02-bilen2020/issues"
   },
   "homepage": "https://github.com/comp426-2022-fall/a02-bilen2020#readme",
-  "dependencies": {
-    "minimist": "^1.2.7",
-    "moment-timezone": "^0.5.39",
-    "node-fetch": "^3.3.0"
-  },
   "bin": {
     "galosh.js": "./cli.js"
   },
   "type": "module",
-  "devDependencies": {}
+  "dependencies": {
+    "minimist": "^1.2.7",
+    "moment-timezone": "^0.5.39",
+    "node-fetch": "^3.3.0"
+  }
 }
